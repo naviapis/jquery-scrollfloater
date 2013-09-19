@@ -53,10 +53,9 @@
         var originalOffset_ = $this.data('originalOffset_');
 
         if (currentScrollTop > originalOffset_.top) {
-          $this.css('left', originalOffset_.left - currentScrollLeft);
           $this.scrollfloater('startFloating_');
+          $this.css('left', originalOffset_.left - currentScrollLeft);
         } else {
-          $this.css('left', '');
           $this.scrollfloater('stopFloating_');
         }
       }
